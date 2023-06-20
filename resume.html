@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<!--font-family: 'Open Sans', sans-serif-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<!--font-family: 'Public Sans', Sans-serif-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!--font-family: "Lato", Sans-serif-->
+    <title>Resume</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+
+        }
+
+        body{
+            background-color: #EBECF0;
+        }
+
+        .main-section{
+            width: 210mm;
+            height: 320mm;
+            background-color: white;
+            margin: 0 auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+        }
+
+        .main-section .left-part{
+            width: 40%; 
+            height: 100%;
+            background-color: orange;        /*rgb(242, 196, 14)*/
+            padding: 2.2em;
+        }
+
+        .left-part .photo-container{  
+            margin-bottom: 2rem;
+            background-color: #282525;
+        }
+
+        .left-part .photo-container img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1rem solid white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .title{
+            font-family: "Public Sans", sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 0.6rem;
+            background-color: #444440;
+            color: white;
+            text-align: center;
+            margin: 1.4rem 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .contact-container{
+            margin-bottom: 2.2rem;
+        }
+
+        .contact-container .contact-list{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-family: "Lato", Sans-serif;
+            color: #444440;
+            letter-spacing: 1px;
+            font-size: 1rem;
+        }
+
+        .education-container{
+            margin-bottom: 2.2rem;
+            font-family: "lato", sans-serif;
+        }
+
+        .education-container .course{
+            margin-bottom: 1rem;
+            color: #414042;
+        }
+        .education-container .education-title{
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-container .college-name{
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+
+        .education-container .education-date{
+            font-size: 0.9rem;
+        }
+
+        .skills-container .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-family: 'Lato', sans-serif;
+}
+.skills-container .skill .right-skill .outer-layer{
+    background-color: #BBBBBB;
+    height:0.4rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+}
+.skills-container .skill .right-skill .inner-layer{
+    background-color: #3D3D3D;
+    height: 100%;
+    border-radius: inherit
+
+}
+
+.right-part{
+    padding: 2.8rem;
+}
+.right-part .banner{
+    font-family: 'Open Sans', sans-serif; 
+    color: #4D4D4F;
+    margin-bottom: 2.2rem;
+}
+.right-part .banner .f-name{
+    margin-top: 1rem;
+    color: #4D4D4F;
+    font-size: 4rem;
+    font-family: "Open Sans", sans-serif;
+}
+.right-part .banner .l-name{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-top: -1rem;
+}
+.right-part .banner .position{
+    letter-spacing: 0.3rem;
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+}
+
+
+.objective{
+            font-family: "Public Sans", sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 0.6rem;
+            background-color: #444440;
+            color: white;
+            text-align: left;
+            margin: 1.4rem 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.text{
+    font-family: "Public Sans", sans-serif;
+}
+
+.list{
+    font-family: "Public Sans", sans-serif;
+    line-height: 30px;
+}
+.about p{
+    font-family: "Public Sans", sans-serif;
+}
+
+.technical{
+    font-family: "Public Sans", sans-serif;
+    line-height: 30px;
+}
+ul{
+    list-style-type: square;
+}
+.ho{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+    <section class="main-section">
+        <div class="left-part">
+            <div class="photo-container">
+                <img src="Images/reshu.jpg" alt="Profile">
+            </div>
+
+            <div class="contact-container">
+                <h2 class="title">Contact Me</h2>
+
+                <div class="contact-list">
+                    <div class="icon-container"> 
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>H-73 Alpha 2,Greater Noida,201310</p>
+                    </div>
+                </div>
+
+                <div class="contact-list">
+                    <div class="icon-container"> 
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <a href="tel:9528529476">9528529476</a>
+                    </div>
+                </div>
+
+                <div class="contact-list">
+                    <div class="icon-container"> 
+                        <i class="bi bi-envelope-open"></i>
+                    </div>
+                    <div class="contact-text">
+                        <a href="mailto:reshusharma1210@gmail.com">reshusharma1210@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-list">
+                    <div class="icon-container"> 
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div class="contact-text">
+                        <a href="#"><pre></pre><p>https://www.linkedin.com/in
+/reshu-sharma-9a57681b</p></pre></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-container">
+                <h2 class="title">Education</h2>
+                <div class="course">
+                    <h2 class="education-title">B.Tech</h2>
+                    <h5 class="college-name">Noida Institute of Engineering and Technology</h5>
+                    <p class="education-year">2020-2024</p>
+                </div>
+
+                <div class="course">
+                    <h2 class="education-title">12th</h2>
+                    <h5 class="college-name">Azad Public School<br>Bulandshahr</h5>
+                    <p class="education-year">2020</p>
+                </div>
+
+                <div class="course">
+                    <h2 class="education-title">10th</h2>
+                    <h5 class="college-name">Azad Public School<br>Bulandshahr</h5>
+                    <p class="education-year">2018</p>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <h2 class="title">Skills</h2>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Communication</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Problem Solving</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Time Management</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 87%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="banner">
+                <h1 class="f-name">Reshu</h1>
+                <h1 class="l-name">Sharma</h1>
+            </div>
+            <div class="about">
+                <h1 class="objective">About Me</h1>
+                <p>Date of Birth: September 10,2002</p>
+                <p>Age: 20</p>
+                <p>Gender: Female</p>
+                <p>Birth Place: Bulandshahr, Uttar Pradesh</p>
+            </div>
+            <div class="title-objective">
+                <h1 class="objective">Career Objective</h1>
+                <p class="text">I want to work with an organisation that can give me a ample opportunities to grow so that I will be able to help in
+                     the growth of that organisation and will be able to enhance my skills and my capabilites.</p>
+            </div>
+            <div class="language">
+                <h1 class="objective">Languages</h1>
+                <ul class="list">
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>German</li>
+                </ul>
+            </div>
+            <div class="proficiencies">
+                <h1 class="objective">Technical Proficiencies</h1>
+                <ul class="technical">
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Django</li>
+                    <li>Mysql</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h1 class="objective">Hobbies</h1>
+                <div class="ho">
+                     <img src="Images/music-alt (1).png">
+                     <img src="Images/palette.png">
+                     <img src="Images/shuttlecock.png">
+                     <img src="Images/book-alt.png">
+                </div>
+                <div class="line">
+                    <p>Music</p>
+                    <p>Painting</p>
+                    <p>Badminton</p>
+                    <p>Reading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
